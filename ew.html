@@ -1,0 +1,95 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+  <title>New Page 5</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://www.5imoban.net/download/jquery/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	
+		<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+	
+		<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" href="css/bbplayer.css"/>
+
+		<link rel="stylesheet" href="css/clndr.css" type="text/css" />
+
+
+	    <script src="js/jquery.bxslider.min.js"></script>
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+				
+</head>
+<body>
+ <!--header main start here-->
+	
+					<div class="header-main">
+			<div class="col-md-3 header-left">
+				<div class="menu-grid">
+					<ul class="menu_drop">
+						<li class="item1"><a href="#">Conditions d’utilisation</a>
+							<ul style="display: none;">
+								<li class="subitem1"><a href="#">Comment insérer une image ? </a></li>
+								<li class="subitem2"><a href="#"> Comment changer mot de passe ?</a></li>
+								<li class="subitem3"><a href="#">Comment insérer une image ?</a></li>
+							</ul>
+						</li>
+						<li class="item2"><a href="#">Confidentialité</a>
+							<ul style="display: none;">
+								<li class="subitem1"><a href="#">Comment insérer une image ? </a></li>
+								<li class="subitem2"><a href="#"> Comment changer mot de passe ?</a></li>
+								<li class="subitem3"><a href="#">Comment insérer une image ?</a></li>
+							</ul>
+						</li>
+						<li class="item3"><a href="#">Présentation</a>
+							<ul style="display: none;">
+								<li class="subitem1"><a href="#">Comment insérer une image ? </a></li>
+								<li class="subitem2"><a href="#"> Comment changer mot de passe ?</a></li>
+								<li class="subitem3"><a href="#">Comment insérer une image ?</a></li>
+							</ul>
+						</li>
+						<li class="item4"><a href="#">Principales questions</a>
+							<ul style="display: none;">
+								<li class="subitem1"><a href="#">Comment insérer une image ? </a></li>
+								<li class="subitem2"><a href="#"> Comment changer mot de passe ?</a></li>
+								<li class="subitem3"><a href="#">Comment insérer une image ?</a></li>
+							</ul>
+						</li>
+						<li class="item5"><a href="#">Solutions publicitaires</a>
+							<ul style="display: none;">
+								<li class="subitem1"><a href="#">Comment insérer une image ? </a></li>
+								<li class="subitem2"><a href="#"> Comment changer mot de passe ?</a></li>
+								<li class="subitem3"><a href="#">Comment insérer une image ?</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div></div>
+<!-- script for tabs -->
+					<script type="text/javascript">
+						$(function() {
+							var menu_ul = $('.menu_drop > li > ul'),
+								menu_a  = $('.menu_drop > li > a');
+							menu_ul.hide();
+							menu_a.click(function(e) {
+								e.preventDefault();
+								if(!$(this).hasClass('active')) {
+									menu_a.removeClass('active');
+									menu_ul.filter(':visible').slideUp('normal');
+									$(this).addClass('active').next().stop(true,true).slideDown('normal');
+								} else {
+									$(this).removeClass('active');
+									$(this).next().stop(true,true).slideUp('normal');
+								}
+							});
+						
+						});
+					</script>
+				
+</body>
+</html>
